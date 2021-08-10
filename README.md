@@ -14,4 +14,7 @@ pipenv --venv
 # Create Django Project
 django-admin startproject core .
 
+# Create Django App
+python manage.py startapp blog
+
 ```
