@@ -5,6 +5,7 @@ admin.site.register(Category)
 
 
 class PostAdmin(admin.ModelAdmin):
+    search_fields = ('title', 'content')
     list_display = (
         'title', 'created_at', 'update_at'
     )
