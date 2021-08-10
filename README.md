@@ -29,4 +29,7 @@ python manage.py makemigrations
 # Run Migrations
 python manage.py migrate
 
+# Create Super USer for Django Admin
+python manage.py createsuperuser
+
 ```
