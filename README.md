@@ -8,6 +8,9 @@ pipenv install django
 # Activate Venv
 pipenv shell
 
+# Learn Virtualenv path
+pipenv --venv
+
 # Create Django Project
 django-admin startproject core .
 
