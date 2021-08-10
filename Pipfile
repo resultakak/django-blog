@@ -8,6 +8,8 @@ django = "*"
 django-autoslug = "*"
 pillow = "*"
 django-ckeditor = "*"
+flake8 = "*"
+pylint = "*"
 
 [dev-packages]
 
