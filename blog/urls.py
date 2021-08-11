@@ -1,7 +1,8 @@
 from django.urls import path
-from blog.views import contact
+from blog.views import contact, home
 
 
 urlpatterns = [
-    path('contact', contact),
+    path('', home),
+    path('contact', contact)
 ]
