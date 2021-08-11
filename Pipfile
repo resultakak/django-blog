@@ -10,6 +10,7 @@ pillow = "*"
 django-ckeditor = "*"
 flake8 = "*"
 pylint = "*"
+django-environ = "*"
 
 [dev-packages]
 
