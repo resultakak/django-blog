@@ -1,15 +1,13 @@
 from django.db import models
 from blog.models import Post
+from blog.abstract_models import DateAbstractModel
 
-
-class Comment(models.Model):
+class Comment(DateAbstractModel):
     author = models.ForeignKey(
         'account.CustomUserModel', on_delete=models.CASCADE, related_name='comment')
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name='comments')
     comment = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_At = models.DateTimeField(auto_now=True)
 
     class Meta:
         db_table = 'comment'
